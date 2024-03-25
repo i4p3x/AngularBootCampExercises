@@ -1,0 +1,44 @@
+
+  <p>
+  <mat-toolbar color="primary">
+    
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>assignment</mat-icon>
+          <span>Directivas de atributo</span>
+        </button>
+        <button mat-menu-item >
+          <mat-icon>assignment</mat-icon>
+          <span>Directivas estructurales</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>assignment</mat-icon>
+          <span>Directivas custom</span>
+        </button>
+      </mat-menu>
+    <span>{{ title }}</span>
+    <span class="example-spacer"></span>
+    
+  </mat-toolbar>
+</p>
+<div>
+    <app-d-atributo></app-d-atributo> 
+    <mat-divider></mat-divider>
+
+    <app-d-estruc></app-d-estruc> 
+    <mat-divider></mat-divider>
+    <!--
+    <mat-list>
+        <mat-list-item></mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Item 2</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Item 3</mat-list-item>
+      </mat-list>
+    -->
+</div>
+
+
