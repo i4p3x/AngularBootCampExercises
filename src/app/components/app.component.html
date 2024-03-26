@@ -8,15 +8,15 @@
     <mat-menu #menu="matMenu">
         <button mat-menu-item>
           <mat-icon>assignment</mat-icon>
-          <span>Directivas de atributo</span>
+          <a href="#one">Directivas de atributo</a>
         </button>
-        <button mat-menu-item >
+        <button mat-menu-item >          
           <mat-icon>assignment</mat-icon>
-          <span>Directivas estructurales</span>
+          <a href="#two">Directivas estructurales</a>          
         </button>
         <button mat-menu-item>
-          <mat-icon>assignment</mat-icon>
-          <span>Directivas custom</span>
+          <mat-icon >assignment</mat-icon>
+          <a href="#three">Directivas custom</a>
         </button>
       </mat-menu>
     <span>{{ title }}</span>
@@ -24,11 +24,17 @@
     
   </mat-toolbar>
 </p>
-<div>
+<div class="center" id="one">
     <app-d-atributo></app-d-atributo> 
+</div>
     <mat-divider></mat-divider>
-
+<div class="center" id="two">
     <app-d-estruc></app-d-estruc> 
+</div>
+    <mat-divider></mat-divider>
+<div class="center" id="three">
+    
+</div>
     <mat-divider></mat-divider>
     <!--
     <mat-list>
@@ -39,6 +45,6 @@
         <mat-list-item>Item 3</mat-list-item>
       </mat-list>
     -->
-</div>
+
 
 
