@@ -10,13 +10,13 @@ import {MatListModule} from '@angular/material/list';
 import {DAtributoComponent } from "./d-atributo/d-atributo.component";
 import {DEstrucComponent} from "./d-estruc/d-estruc.component";
 import {DCustomComponent} from "./d-custom/d-custom.component";
-
+import {BindingComponent} from "./binding/binding.component";
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    imports: [CommonModule, RouterOutlet, MatToolbarModule, MatIconModule, MatButtonModule, MatMenuModule,MatListModule,MatDividerModule, DAtributoComponent, DEstrucComponent, DCustomComponent]
+    imports: [CommonModule, RouterOutlet, MatToolbarModule, MatIconModule, MatButtonModule, MatMenuModule,MatListModule,MatDividerModule, DAtributoComponent, DEstrucComponent, DCustomComponent, BindingComponent]
 })
 export class AppComponent {
   title = 'AngularBootCamp Exercises';
